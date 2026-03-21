@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eartheater — 8</title>
+  <style>
+    :root {
+      --paper: #f5edde;
+      --ink: #8a5b39;
+      --ink-soft: #a27655;
+      --line: #d9c1aa;
+      --button-bg: rgba(255, 255, 255, 0.22);
+      --button-hover: rgba(255, 255, 255, 0.42);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 18px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 760px;
+      text-align: center;
+      padding: 44px 22px 36px;
+    }
+
+    .top-ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 28px;
+      color: var(--ink-soft);
+      opacity: 0.9;
+    }
+
+    .top-ornament::before,
+    .top-ornament::after {
+      content: "";
+      width: 70px;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .top-ornament span {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    .kicker {
+      font-size: 0.82rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 4.5vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+
+    h2 {
+      margin: 12px 0 0;
+      font-size: clamp(1.2rem, 2.3vw, 1.7rem);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--ink-soft);
+    }
+
+    .divider {
+      width: 120px;
+      margin: 28px auto 26px;
+      position: relative;
+      height: 16px;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      width: 42px;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .divider::before {
+      left: 0;
+    }
+
+    .divider::after {
+      right: 0;
+    }
+
+    .divider span {
+      display: inline-block;
+      color: var(--ink-soft);
+      font-size: 0.9rem;
+      line-height: 1;
+    }
+
+    .intro {
+      max-width: 510px;
+      margin: 0 auto 34px;
+      font-size: 1rem;
+      line-height: 1.9;
+      color: var(--ink);
+    }
+
+    .links {
+      max-width: 400px;
+      margin: 0 auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    .button {
+      display: block;
+      text-decoration: none;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 13px 18px;
+      font-size: 0.98rem;
+      line-height: 1.3;
+      background: var(--button-bg);
+      transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--button-hover);
+      border-color: #c9ab8f;
+      transform: translateY(-1px);
+    }
+
+    .footer-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 34px auto 14px;
+      color: var(--ink-soft);
+      opacity: 0.85;
+    }
+
+    .footer-divider::before,
+    .footer-divider::after {
+      content: "";
+      width: 52px;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .footer-divider span {
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 480px) {
+      .page {
+        padding: 34px 14px 24px;
+      }
+
+      .top-ornament::before,
+      .top-ornament::after {
+        width: 44px;
+      }
+
+      .intro {
+        font-size: 0.96rem;
+        line-height: 1.8;
+      }
+
+      .button {
+        font-size: 0.96rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="top-ornament">
+      <span>❦</span>
+    </div>
+
+    <div class="kicker">Beluister het nummer</div>
+
+    <h1>Eartheater</h1>
+    <h2>8</h2>
+
+    <div class="divider"><span>✦</span></div>
+
+    <p class="intro">
+      Kies je favoriete platform en luister naar het nummer dat bij deze pagina hoort.
+    </p>
+
+    <div class="links">
+      <a
+        class="button"
+        href="https://open.spotify.com/track/140l3V3IpQ0PLTvlGzeQIG"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Luister op Spotify
+      </a>
+
+      <a
+        class="button"
+        href="https://music.apple.com/us/song/8/1846603723"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Luister op Apple Music
+      </a>
+
+      <a
+        class="button"
+        href="https://youtu.be/cic-uQv4tIA"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Luister op YouTube Music
+      </a>
+    </div>
+
+    <div class="footer-divider"><span>❦</span></div>
+
+    <div class="footer">
+      Scan vanuit het boek om te luisteren.
+    </div>
+  </main>
+</body>
+</html>
